@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="img/logo.png" />
+    <title>Creando en Mallorca · Content Creation Studio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet" />
+
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header class="site-header" id="header">
+        <div class="container">
+            <a href="#" class="logo" aria-label="Creando en Mallorca">
+                CREANDO
+                <span>en Mallorca</span>
+            </a>
+
+            <nav class="nav-desktop" id="navDesktop">
+                <a href="#about" data-key="nav-about">ABOUT</a>
+                <a href="#services" data-key="nav-services">SERVICES</a>
+                <a href="#portfolio" data-key="nav-portfolio">PORTFOLIO</a>
+                <a href="#clients" data-key="nav-clients">CLIENTS</a>
+                <a href="#contact" data-key="nav-contact">CONTACT</a>
+                <div class="lang-toggle">
+                    <button class="active" data-lang="en" aria-label="English">EN</button>
+                    <span class="divider">|</span>
+                    <button data-lang="es" aria-label="Español">ES</button>
+                </div>
+            </nav>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="hero-content fade-up visible">
+                <div class="hero-label" data-key="hero-label">Content Creation</div>
+                <h1>
+                    <span data-key="hero-title">Content Creation,<br />Video, Photo &amp;</span>
+                    <span data-key="hero-title-em" class="clr">Social Media<br />Management</span>
+                </h1>
+                <p data-key="hero-sub">
+                    We help brands and businesses stand out through high-quality visual content
+                    and strategic social media management. You can also send us raw footage from
+                    anywhere in the world, and we'll turn it into engaging videos for your platforms.
+                </p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn-gold" data-key="hero-cta">Contact Us</a>
+                    <a href="#portfolio" class="btn-outline" data-key="hero-cta-secondary">See our work</a>
+                </div>
+                <span class="hero-cta-line"></span>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="line"></div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image fade-up">
+                    <img src="img/about.png" alt="Mallorca creative studio" loading="lazy" />
+                </div>
+                <div class="about-text fade-up delay-1">
+                    <div class="section-label" data-key="about-label">About Us</div>
+                    <h2 class="section-title" data-key="about-title" class="clr">Creando en Mallorca</h2>
+                    <p data-key="about-p1">
+                        We are a creative team focused on audiovisual production and digital strategy
+                        for commercial brands, hospitality, and both local and international projects.
+                    </p>
+                    <p data-key="about-p2">
+                        Based in Mallorca, we blend Mediterranean lifestyle with premium visual
+                        storytelling to help you connect with your audience authentically.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SERVICES ===== -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="services-header fade-up">
+                <div class="section-label centered" data-key="services-label">What we do</div>
+                <h2 class="section-title" data-key="services-title">Our Services</h2>
+                <p class="section-sub centered" data-key="services-sub">
+                    Tailored creative solutions for brands that value quality and authenticity.
+                </p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card fade-up delay-1">
+                    <div class="icon"><i class="fas fa-camera"></i></div>
+                    <h3 data-key="srv-1-title">Photo &amp; Video</h3>
+                    <p data-key="srv-1-desc">
+                        Event coverage, gastronomy, products, real estate, home maintenance,
+                        commercial reels, and drone aerial footage.
+                    </p>
+                </div>
+                <div class="service-card fade-up delay-2">
+                    <div class="icon"><i class="fas fa-film"></i></div>
+                    <h3 data-key="srv-2-title">Video Editing</h3>
+                    <p data-key="srv-2-desc">
+                        Exclusive professional video editing service for creators or brands
+                        that already have raw footage ready.
+                    </p>
+                </div>
+                <div class="service-card fade-up delay-3">
+                    <div class="icon"><i class="fas fa-hashtag"></i></div>
+                    <h3 data-key="srv-3-title">Social Media Management</h3>
+                    <p data-key="srv-3-desc">
+                        Content creation, calendar planning, copywriting, and publishing for Instagram.
+                    </p>
+                </div>
+                <div class="service-card fade-up delay-4">
+                    <div class="icon"><i class="fas fa-gem"></i></div>
+                    <h3 data-key="srv-4-title">Custom Bundles</h3>
+                    <p data-key="srv-4-desc">
+                        Tailored combination of production + social media management based on client needs.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PORTFOLIO / NUESTRO TRABAJO ===== -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="portfolio-header fade-up">
+                <div class="section-label" data-key="portfolio-label">Nuestro Trabajo</div>
+            </div>
+
+            <div class="work-grid">
+
+                <!-- ★ REEL 1 — autoplay muted loop. Swap src + poster with your files -->
+                <div class="work-reel fade-up delay-1">
+                    <video src="img/Portfolio/korhu couple 01.mp4" poster="img/Portfolio/reel1.jpg" autoplay muted loop playsinline preload="metadata"></video>
+                    <div class="reel-shade"></div>
+                    <span class="reel-badge"><span class="dot"></span><span data-key="port-reel">REEL</span></span>
+                    <span class="reel-mute" aria-label="Sound off"><i class="fas fa-volume-mute"></i></span>
+                </div>
+
+                <!-- ★ VIDEO card -->
+                <!-- ★ VIDEO — 500x500 VIDEO -->
+                <a target="_blank" href="https://drive.google.com/drive/folders/13_VPGs7LmA67c18qXvfk3R6PrA0AOCm5" class="work-card media-card video-card fade-up delay-2" style="grid-area:a;">
+                    <video
+                        class="card-media"
+                        src="img/Portfolio/dish web.mp4"
+                        muted
+                        loop
+                        playsinline
+                        preload="metadata">
+                    </video>
+
+                    <div class="card-overlay"></div>
+
+                    <div class="card-content">
+                        <span class="card-number">01</span>
+                        <span class="card-title" data-key="port-video">FLAWLESS DISH</span>
+                        <span class="card-line"></span>
+                        <span class="card-hint">FOOD SHOTS</span>
+                    </div>
+
+                    <span class="card-corner top-left"></span>
+                    <span class="card-corner top-right"></span>
+                    <span class="card-corner bottom-left"></span>
+                    <span class="card-corner bottom-right"></span>
+                </a>
+
+
+                <!-- ★ FOTO — 500x500 PHOTO -->
+                <a target="_blank" href="https://drive.google.com/drive/folders/13_VPGs7LmA67c18qXvfk3R6PrA0AOCm5" class="work-card media-card photo-card fade-up delay-3" style="grid-area:b;">
+                    <img
+                        class="card-media"
+                        src="img/Portfolio/16-DSCF7500.jpg"
+                        alt="Photography portfolio"
+                        loading="lazy">
+
+                    <div class="card-overlay"></div>
+
+                    <div class="card-content">
+                        <span class="card-number">02</span>
+                        <span class="card-title" data-key="port-foto">PHOTO</span>
+                        <span class="card-line"></span>
+                        <span class="card-hint">FOOD SHOTS</span>
+                    </div>
+
+                    <span class="card-corner top-left"></span>
+                    <span class="card-corner top-right"></span>
+                    <span class="card-corner bottom-left"></span>
+                    <span class="card-corner bottom-right"></span>
+                </a>
+
+
+                <!-- ★ DRON — 500x500 VIDEO -->
+                <a target="_blank" href="https://drive.google.com/drive/folders/13_VPGs7LmA67c18qXvfk3R6PrA0AOCm5" class="work-card media-card video-card fade-up delay-4" style="grid-area:c;">
+                    <video
+                        class="card-media"
+                        src="img/Portfolio/dron.mp4"
+                        muted
+                        loop
+                        playsinline
+                        preload="metadata">
+                    </video>
+
+                    <div class="card-overlay"></div>
+
+                    <div class="card-content">
+                        <span class="card-number">03</span>
+                        <span class="card-title" data-key="port-dron">DRONE</span>
+                        <span class="card-line"></span>
+                        <span class="card-hint">DRONE CINEMATIC</span>
+                    </div>
+
+                    <span class="card-corner top-left"></span>
+                    <span class="card-corner top-right"></span>
+                    <span class="card-corner bottom-left"></span>
+                    <span class="card-corner bottom-right"></span>
+                </a>
+
+
+                <!-- ★ GESTIÓN — 500x500 PHOTO -->
+                <a target="_blank" href="https://drive.google.com/drive/folders/13_VPGs7LmA67c18qXvfk3R6PrA0AOCm5" class="work-card media-card video-card fade-up delay-4" style="grid-area:d;">
+                    <video
+                        class="card-media"
+                        src="img/Portfolio/martin dron.mp4"
+                        muted
+                        loop
+                        playsinline
+                        preload="metadata">
+                    </video>
+
+                    <div class="card-overlay"></div>
+
+                    <div class="card-content">
+                        <span class="card-number">04</span>
+                        <span class="card-title" data-key="port-gestion">REAL ESTATE</span>
+                        <span class="card-line"></span>
+                        <span class="card-hint">HOME MAINTENANCE SHOTS</span>
+                    </div>
+
+                    <span class="card-corner top-left"></span>
+                    <span class="card-corner top-right"></span>
+                    <span class="card-corner bottom-left"></span>
+                    <span class="card-corner bottom-right"></span>
+                </a>
+
+                <!-- ★ REEL 2 — autoplay muted loop. Swap src + poster with your files -->
+                <div class="work-reel fade-up delay-6">
+                    <video src="img/Portfolio/Sestudi.mp4" poster="img/Portfolio/reel2.jpg" autoplay muted loop playsinline preload="metadata"></video>
+                    <div class="reel-shade"></div>
+                    <span class="reel-badge"><span class="dot"></span><span data-key="port-reel">REEL</span></span>
+                    <span class="reel-mute" aria-label="Sound off"><i class="fas fa-volume-mute"></i></span>
+                </div>
+
+            </div>
+
+            <div class="work-more-wrap fade-up">
+                <a target="_blank" href="https://drive.google.com/drive/folders/13_VPGs7LmA67c18qXvfk3R6PrA0AOCm5" class="work-more" data-key="work-more">Ver más proyectos <span class="arrow">&rarr;</span></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CLIENTS ===== -->
+    <section class="clients" id="clients">
+        <div class="container">
+            <div class="fade-up">
+                <div class="section-label centered" data-key="clients-label">Collaborators</div>
+                <h2 class="section-title" data-key="clients-title">Trusted by</h2>
+                <p class="section-sub centered" data-key="clients-sub">
+                    Grateful for the clients and collaborators who have worked with us.
+                </p>
+            </div>
+
+            <div class="clients-marquee fade-up delay-1">
+                <div class="clients-track" id="clientsTrack">
+                    <!-- Logos injected by JS -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="fade-up">
+                <div class="section-label centered" data-key="contact-label">Get in touch</div>
+                <h2 class="section-title" data-key="contact-title">Let's create <em>something together.</em></h2>
+                <p class="section-sub centered" data-key="contact-sub">
+                    We'd love to hear about your project. Reach out to us anytime.
+                </p>
+            </div>
+
+            <div class="contact-links fade-up delay-1">
+                <a href="https://wa.me/34632047559?text=Hola%2C%20%C2%BFpuedo%20obtener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20esto%3F" target="_blank" rel="noopener" class="contact-link">
+                    <i class="fab fa-whatsapp"></i>
+                    <span data-key="contact-whatsapp">WhatsApp</span>
+                </a>
+                <a href="https://instagram.com/creandoenmallorca" target="_blank" rel="noopener" class="contact-link">
+                    <i class="fab fa-instagram"></i>
+                    <span data-key="contact-instagram">Instagram</span>
+                </a>
+                <!-- Email link removed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 <span>Creando en Mallorca</span> &middot; Visual Storytelling Studio</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
