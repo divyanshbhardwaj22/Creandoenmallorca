@@ -34,6 +34,8 @@
     'srv-3-desc': 'Content creation, calendar planning, copywriting, and publishing for Instagram.',
     'srv-4-title': 'Custom Bundles',
     'srv-4-desc': 'Tailored combination of production + social media management based on client needs.',
+    'srv-5-title': 'Website Design',
+    'srv-5-desc': 'We create modern, fast, fully mobile-responsive websites.',
     'portfolio-label': 'Our Work',
     'port-reel': 'REEL',
     'port-video': 'FLAWLESS DISH',
@@ -77,6 +79,8 @@ es: {
     'srv-3-desc': 'Creación de contenido, planificación de calendario, copywriting y publicación para Instagram.',
     'srv-4-title': 'Packs a Medida',
     'srv-4-desc': 'Combinación personalizada de producción + gestión de redes adaptada a las necesidades del cliente.',
+    'srv-5-title': 'Diseño de página web',
+    'srv-5-desc': 'Creamos sitios web modernos, rápidos y totalmente adaptados a móviles.',
     'portfolio-label': 'Nuestro Trabajo',
     'port-reel': 'REEL',
     'port-video': 'PLATO IMPECABLE',
@@ -175,12 +179,10 @@ es: {
     });
 
     // ---- WORK REELS — autoplay muted loop, battery-smart ----
-    // Videos only play while visible on screen; they pause when scrolled
-    // out of view and resume (from where they were) when they return.
     const reelVideos = document.querySelectorAll('.work-reel video');
 
     if (reelVideos.length) {
-        reelVideos.forEach(v => { v.muted = true; }); // double-guarantee silent autoplay
+        reelVideos.forEach(v => { v.muted = true; });
 
         if ('IntersectionObserver' in window) {
             const reelObserver = new IntersectionObserver((entries) => {
@@ -195,7 +197,6 @@ es: {
             }, { threshold: 0.25 });
             reelVideos.forEach(v => reelObserver.observe(v));
         } else {
-            // Fallback for very old browsers
             reelVideos.forEach(v => v.play().catch(() => {}));
         }
     }
@@ -222,7 +223,6 @@ es: {
 
     const track = document.getElementById('clientsTrack');
     if (track) {
-        // Build array with duplicates for seamless marquee
         const all = [...clientLogos, ...clientLogos];
         all.forEach((client) => {
             const div = document.createElement('div');
@@ -231,7 +231,6 @@ es: {
             img.src = client.src;
             img.alt = client.name;
             img.loading = 'lazy';
-            // If image fails, replace with a placeholder SVG (DARK themed)
             img.onerror = function() {
                 this.outerHTML = `
                     <svg viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg" style="width:100%; height:100%;">
